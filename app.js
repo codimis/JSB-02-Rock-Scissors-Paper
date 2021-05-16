@@ -16,25 +16,24 @@ function compChoice() {
 function userChoice(choice) {
   const compChoices = compChoice();
   if (choice === compChoices) {
-    message.textContent = "Berabere";
+    message.textContent = `${choice} - TIE - ${compChoices}`;
   } else if (choice === "Rock" && compChoices === "Paper") {
-    message.textContent = "Paper is win!";
+    message.textContent = `${choice} - COMPUTER WINS! - ${compChoices}`;
     compScore++;
-    computer.textContent = userScore;
   } else if (choice === "Rock" && compChoices === "Scissors") {
-    message.textContent = "Rock is win!";
+    message.textContent = `${choice} - USER WINS! - ${compChoices}`;
     userScore++;
   } else if (choice === "Paper" && compChoices === "Rock") {
-    message.textContent = "Paper is win!";
+    message.textContent = `${choice} - USER WINS! - ${compChoices}`;
     userScore++;
   } else if (choice === "Paper" && compChoices === "Scissors") {
-    message.textContent = "Scissors is win!";
+    message.textContent = `${choice} - COMPUTER WINS! - ${compChoices}`;
     compScore++;
   } else if (choice === "Scissors" && compChoices === "Rock") {
-    message.textContent = "Rock is win!";
+    message.textContent = `${choice} - COMPUTER WINS! - ${compChoices}`;
     compScore++;
   } else if (choice === "Scissors" && compChoices === "Paper") {
-    message.textContent = "Scissors is win!";
+    message.textContent = `${choice} - USER WINS! - ${compChoices}`;
     userScore++;
   }
   user.textContent = userScore;
